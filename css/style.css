@@ -655,7 +655,7 @@ a:visited {
 }
 
 .banner-two {
-  background: transparent url(../images/banner-bg-2-1.png) top right no-repeat;
+  /* background: transparent url(../images/banner-bg-2-1.png) top right no-repeat; */
   padding-top: 300px;
 }
 .banner-two .container {
