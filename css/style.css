@@ -1853,7 +1853,7 @@ a:visited {
 * 15. footer styles
 */
 .site-footer {
-  background: #2f4099 url(../images/footer-bg-1-1.png) center right no-repeat;
+  background: url(../images/02031707_inner-banner-bg.png) center right no-repeat;
   background-size: cover;
 }
 @media (max-width: 1199px) {
