@@ -655,7 +655,7 @@ a:visited {
 }
 
 .banner-two {
-  /* background: transparent url(../images/banner-bg-2-1.png) top right no-repeat; */
+  background: transparent url(../images/jellies/ss2.png) top right no-repeat;
   padding-top: 300px;
 }
 .banner-two .container {
@@ -1853,11 +1853,11 @@ a:visited {
 * 15. footer styles
 */
 .site-footer {
-  background: url(../images/02031707_inner-banner-bg.png) center right no-repeat;
+  background: url(../images/jellies/ss1.png) center right no-repeat;
   background-size: cover;
 }
 @media (max-width: 1199px) {
-  .site-footer {
+  .site-footer {  
     background-position: left center;
   }
 }
