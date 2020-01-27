@@ -5093,6 +5093,9 @@ figcaption {
 }
 
 @media (max-width: 991px) {
+  .size-h1{
+    font-size: 3em;
+  }
   h1 {
     margin-bottom: 16px;
   }
