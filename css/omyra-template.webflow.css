@@ -689,7 +689,7 @@ figcaption {
 }
 
 .section.is-hero {
-  height: 800px;
+  height: 100vh;
 }
 
 .section.is-hero.flexh-align-center.position-relative.img-hero {
@@ -5093,6 +5093,9 @@ figcaption {
 }
 
 @media (max-width: 991px) {
+  .section.is-hero {
+    height: 800px;
+}
   .size-h1{
     font-size: 3em;
   }
@@ -6106,6 +6109,7 @@ figcaption {
 }
 
 @media (max-width: 767px) {
+ 
   .container {
     display: -webkit-box;
     display: -webkit-flex;
