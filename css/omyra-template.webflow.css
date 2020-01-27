@@ -1210,7 +1210,7 @@ figcaption {
 }
 
 .text-xlarge {
-  font-size: 32px;
+  font-size: 1.5em;
   line-height: 1.25;
 }
 
@@ -5093,6 +5093,9 @@ figcaption {
 }
 
 @media (max-width: 991px) {
+  .size-h1{
+    font-size: 3em;
+  }
   h1 {
     margin-bottom: 16px;
   }
@@ -6239,6 +6242,14 @@ figcaption {
 }
 
 @media (max-width: 479px) {
+  .sm-text-align-center{
+    text-align: center;
+  }
+    .sm-img-center{
+      display: block;
+      margin: 0 auto;
+    }
+
   .col.lg-12.xs-no-padding-left-right {
     padding-right: 0px;
     padding-left: 0px;
