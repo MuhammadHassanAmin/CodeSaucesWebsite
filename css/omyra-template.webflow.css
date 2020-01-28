@@ -4376,6 +4376,7 @@ figcaption {
 .logo-image-2 {
   margin-right: 8px;
   color: #866adb;
+  width: 40%;
 }
 
 .button-primary-text-2 {
@@ -4518,7 +4519,7 @@ figcaption {
 
 .navigation-section.position-absolute {
   position: absolute;
-  top: 16px;
+  top: 0;
   width: 100%;
 }
 
@@ -5093,6 +5094,7 @@ figcaption {
 }
 
 @media (max-width: 991px) {
+  
   .section.is-hero {
     height: 800px;
 }
@@ -5345,13 +5347,10 @@ figcaption {
     padding-top: 160px;
   }
   .section.is-hero.img-hero {
-    background-position: 0% 50%;
+    background-position: 38% 35%;
     background-size: 3500px;
   }
-  .section.is-hero.img-hero.flexh-align-bottom {
-    background-position: 0% 100%;
-    background-size: 2160px;
-  }
+  
   .margin-bottom {
     margin-bottom: 16px;
   }
@@ -6246,6 +6245,17 @@ figcaption {
 }
 
 @media (max-width: 479px) {
+  .size-h1{
+    font-size: 2.5em;
+  }
+  .section.is-hero.img-hero.flexh-align-bottom {
+    background-position: 38% 110%;
+
+    background-size: 2160px;
+  }
+  .logo-image-2{
+    width: 45%;
+  }
   .sm-text-align-center{
     text-align: center;
   }
@@ -6463,9 +6473,7 @@ figcaption {
   .c-accordion3__toggle {
     display: block;
   }
-  .logo-image-2 {
-    min-width: 35px;
-  }
+ 
   .button-primary-2 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 100%;
@@ -7711,3 +7719,6 @@ figcaption {
 }
 
 /* own css */
+.flex-auto{
+  flex: auto;
+}
