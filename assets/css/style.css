@@ -245,7 +245,8 @@ textarea:focus {
 
 .slick-dot-style ul.slick-dots li.slick-active button {
     border-color: #0172d0;
-    background-color: #0172d0;
+    /* background-color: #0172d0; */
+    background-color: #f8371f;
 }
 
 .container {
@@ -505,7 +506,7 @@ only screen and (max-width: 767.98px) {
 /*------- header top style end -------*/
 /*------ main menu start ------*/
 .brand-logo {
-    max-width: 110px;
+    /* max-width: 110px; */
 }
 
 .main-menu-wrapper {
@@ -602,7 +603,8 @@ only screen and (max-width: 767.98px) {
 
 .main-menu ul li ul.dropdown li:hover>a {
     color: #fff;
-    background-color: #0172d0;
+    /* background-color: #0172d0; */
+    background-color: #f8371f;
 }
 
 .main-menu ul li ul.dropdown li:hover>ul.dropdown {
@@ -791,7 +793,8 @@ only screen and (max-width: 767.98px) {
 }
 
 .mobile-main-header .mobile-menu-toggler .mobile-menu-btn:hover span {
-    background-color: #0172d0;
+    /* background-color: #0172d0; */
+    background-color: #f8371f;
 }
 
 .mobile-main-header .mobile-menu-toggler .mobile-menu-btn:hover span:nth-child(1),
@@ -977,7 +980,8 @@ only screen and (max-width: 767.98px) {
 }
 
 .off-canvas-wrapper .off-canvas-inner-content {
-    background-color: #0172d0;
+    /* background-color: #0172d0; */
+    background-color: #f8371f;
     width: 300px;
     height: 100%;
     position: relative;
@@ -1141,7 +1145,8 @@ only screen and (max-width: 767.98px) {
     line-height: 1;
     border-radius: 0;
     font-family: "Sarabun", sans-serif;
-    background-color: #0172d0;
+    /* background-color: #0172d0; */
+    background-color: #f8371f;
     border-radius: 50px;
     font-weight: 500;
 }
@@ -1232,7 +1237,10 @@ only screen and (max-width: 767.98px) {
 }
 
 .theme-bg {
-    background-color: #0172d0;
+    /* background-color: #0172d0; */
+    /* background-color: #f8371f; */
+    background-color: black;
+    
 }
 
 .gray-bg {
@@ -1516,7 +1524,8 @@ only screen and (max-width: 767.98px) {
     -o-transition: 0.4s;
     transition: 0.4s;
     border-radius: 50%;
-    background-color: #0172d0;
+    /* background-color: #0172d0; */
+    background-color: #f8371f;
     -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
     box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
 }
@@ -2683,7 +2692,8 @@ only screen and (max-width: 767.98px) {
 .single-skill .skill-bar .skill-progress {
     display: block;
     height: 100%;
-    background-color: #0172d0;
+    /* background-color: #0172d0; */
+    background-color: #f8371f;
     position: relative;
 }
 
@@ -2815,12 +2825,14 @@ only screen and (max-width: 767.98px) {
 .paginatoin-area .pagination-box li a:hover {
     color: #fff;
     border-color: #0172d0;
-    background-color: #0172d0;
+    /* background-color: #0172d0; */
+    background-color: #f8371f;
 }
 
 .paginatoin-area .pagination-box li.active a {
     color: #fff;
-    background-color: #0172d0;
+    /* background-color: #0172d0; */
+    background-color: #f8371f;
 }
 
 /*------ pagination area style end ------*/
@@ -2919,7 +2931,7 @@ only screen and (max-width: 767.98px) {
 
 .blog-widget-title:after {
     width: 50px;
-    background-color: #0172d0;
+    /* background-color: #0172d0; */
 }
 
 .widget-search-form {
@@ -2940,7 +2952,8 @@ only screen and (max-width: 767.98px) {
 .widget-search-form .search-btn {
     width: 46px;
     height: 46px;
-    background-color: #0172d0;
+    /* background-color: #0172d0; */
+    background-color: #f8371f;
     color: #fff;
     font-size: 18px;
     line-height: 46px;
@@ -3041,7 +3054,8 @@ only screen and (max-width: 767.98px) {
 
 .blog-tag a:hover {
     color: #fff;
-    background-color: #0172d0;
+    /* background-color: #0172d0; */
+    background-color: #f8371f;
     border-color: #0172d0;
 }
 
@@ -3144,7 +3158,8 @@ only screen and (max-width: 767.98px) {
 .comment-section ul li .comment-body .reply-btn a:hover {
     color: #fff;
     border-color: #0172d0;
-    background-color: #0172d0;
+    /* background-color: #0172d0; */
+    background-color: #f8371f;
 }
 
 /*--- blog comment section end ---*/
@@ -3361,7 +3376,8 @@ only screen and (max-width: 767.98px) {
 }
 
 .card-header button:hover {
-    background-color: #0172d0;
+    /* background-color: #0172d0; */
+    background-color: #f8371f;
     color: #fff;
 }
 
@@ -3394,7 +3410,8 @@ only screen and (max-width: 767.98px) {
 
 .faq-inner .card-header .accordio-heading[aria-expanded="true"] {
     color: #fff;
-    background-color: #0172d0;
+    /* background-color: #0172d0; */
+    background-color: #f8371f;
 }
 
 .faq-inner .card-header .accordio-heading[aria-expanded="true"] i {
@@ -3467,7 +3484,8 @@ only screen and (max-width: 767.98px) {
 
 .error .searchform__submit {
     border: none;
-    background-color: #0172d0;
+    /* background-color: #0172d0; */
+    background-color: #f8371f;
     width: 70px;
     color: #fff;
     cursor: pointer;
