@@ -1146,7 +1146,8 @@ only screen and (max-width: 767.98px) {
     border-radius: 0;
     font-family: "Sarabun", sans-serif;
     /* background-color: #0172d0; */
-    background-color: #f8371f;
+    /* background-color: #f8371f; */
+    background-color: #ff7a7a;
     border-radius: 50px;
     font-weight: 500;
 }
@@ -1227,7 +1228,9 @@ only screen and (max-width: 767.98px) {
 }
 
 .title span {
-    color: #1c47c1;
+    /* color: #1c47c1; */
+    color: #ff7a7a;
+    
 }
 
 .subtitle {
@@ -2175,7 +2178,8 @@ only screen and (max-width: 767.98px) {
 }
 
 .testimonial-content .client-name {
-    color: #1c47c1;
+    /* color: #1c47c1; */
+    color: #ff7a7a;
     line-height: 1;
     font-weight: 500;
     padding-bottom: 4px;
@@ -3619,7 +3623,8 @@ only screen and (max-width: 767.98px) {
 }
 
 .newsletter-inner .btn {
-    background-color: #1c47c1;
+    /* background-color: #1c47c1; */
+    background-color: #ff7a7a;
 }
 
 .newsletter-inner .btn:hover {
@@ -3635,7 +3640,8 @@ only screen and (max-width: 767.98px) {
 }
 
 .copyright-text p a {
-    color: #0172d0;
+    /* color: #0172d0; */
+    color: #ff7a7a;
 }
 
 @media only screen and (min-width: 1600px) {
