@@ -212,6 +212,18 @@ textarea:focus {
     box-shadow: none;
 }
 
+
+/* Aligment */
+.hc{
+    margin:  0 auto;
+    display: block;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right !important;
+}
 /*--------- slick slider dot style start -------*/
 .slick-dot-style ul.slick-dots {
     bottom: 15px;
@@ -511,6 +523,7 @@ only screen and (max-width: 767.98px) {
 /*------ main menu start ------*/
 .brand-logo {
     /* max-width: 110px; */
+    width: 245px;
 }
 
 .main-menu-wrapper {
@@ -518,7 +531,7 @@ only screen and (max-width: 767.98px) {
 }
 
 .main-menu-wrapper.header-transparent {
-    padding: 43px 0;
+    padding: 20px 0;
 }
 
 .main-menu ul {
@@ -726,12 +739,12 @@ only screen and (max-width: 767.98px) {
 }
 
 .sticky.is-sticky.main-menu-wrapper .brand-logo {
-    max-width: 100px;
+    max-width: 230px;
 }
 
 /*------ sticky menu style end ------*/
 .header-transparent {
-    top: 54px;
+    top: 0;
     left: 0;
     width: 100%;
     position: absolute;
@@ -1703,7 +1716,7 @@ only screen and (max-width: 767.98px) {
 01. Slider area
 --------------------------*/
 .hero-slider-item {
-    height: 850px;
+    height: 700px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1806,7 +1819,7 @@ only screen and (max-width: 767.98px) {
 }
 
 .hero-transparent-bg {
-    height: 890px;
+    height: 750px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
@@ -1934,7 +1947,11 @@ only screen and (max-width: 767.98px) {
 
 .service-policy-title {
     font-weight: 700;
+    text-align: center;
     padding: 17px 0 8px;
+}
+.service-policy-desc{
+    text-align: center;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px),
