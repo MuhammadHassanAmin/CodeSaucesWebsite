@@ -13,6 +13,10 @@ Table of content
 10. footer
 -------------------------------------------------------------------*/
 /*------ Typography Style Start ------*/
+
+html{
+    scroll-behavior: smooth;
+}
 body {
     color: #151515;
     line-height: 1.7;
