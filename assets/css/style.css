@@ -3543,7 +3543,7 @@ only screen and (max-width: 767.98px) {
 }
 
 .widget-title {
-    font-weight: 800;
+    /* font-weight: 800; */
     margin-bottom: 38px;
 }
 
@@ -3596,7 +3596,7 @@ only screen and (max-width: 767.98px) {
     /* float: left; */
 }
 .socialIcons{
-    padding: 4%;
+    padding: 2%;
 }
 
 .useful-link li a {
