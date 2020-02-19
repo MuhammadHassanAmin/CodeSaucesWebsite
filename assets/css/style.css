@@ -3571,7 +3571,10 @@ only screen and (max-width: 767.98px) {
     line-height: 1.5;
     margin-bottom: 22px;
 }
-
+#map {
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+   }
 .contact-info li span {
     font-weight: 600;
     padding-right: 5px;
@@ -3585,7 +3588,10 @@ only screen and (max-width: 767.98px) {
     line-height: 1.7;
     margin-bottom: 20px;
     width: 50%;
-    float: left;
+    /* float: left; */
+}
+.socialIcons{
+    padding: 4%;
 }
 
 .useful-link li a {
