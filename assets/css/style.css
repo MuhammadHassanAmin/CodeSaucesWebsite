@@ -214,6 +214,9 @@ textarea:focus {
 
 
 /* Aligment */
+.pv-100{
+    padding: 100px 0;
+}
 .hc{
     margin:  0 auto;
     display: block;
