@@ -855,7 +855,8 @@ only screen and (max-width: 767.98px) {
 }
 
 .mobile-menu li>a:hover {
-    color: #151515;
+    /* color: #151515; */
+    color: #ff7a7a;
 }
 
 .mobile-menu li ul li {
@@ -999,7 +1000,8 @@ only screen and (max-width: 767.98px) {
 
 .off-canvas-wrapper .off-canvas-inner-content {
     /* background-color: #0172d0; */
-    background-color: #f8371f;
+    background-color: #000000;
+    opacity: 0.7;
     width: 300px;
     height: 100%;
     position: relative;
