@@ -1025,7 +1025,7 @@ only screen and (max-width: 767.98px) {
     width: 60px;
     height: 60px;
     font-size: 26px;
-    color: #0172d0;
+    /* color: #0172d0; */
     line-height: 60px;
     text-align: center;
     cursor: pointer;
@@ -1088,7 +1088,7 @@ only screen and (max-width: 767.98px) {
     height: 60px;
     line-height: 62px;
     font-size: 20px;
-    color: #0172d0;
+    /* color: #0172d0; */
     position: absolute;
 }
 
