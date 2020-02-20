@@ -743,7 +743,7 @@ only screen and (max-width: 767.98px) {
 }
 
 .sticky.is-sticky.main-menu-wrapper .brand-logo {
-    max-width: 230px;
+    max-width: 200px;
 }
 
 /*------ sticky menu style end ------*/
@@ -1004,7 +1004,7 @@ only screen and (max-width: 767.98px) {
 .off-canvas-wrapper .off-canvas-inner-content {
     /* background-color: #0172d0; */
     background-color: #000000;
-    opacity: 0.7;
+    opacity: 0.8;
     width: 300px;
     height: 100%;
     position: relative;
@@ -1018,17 +1018,17 @@ only screen and (max-width: 767.98px) {
 
 @media only screen and (max-width: 479.98px) {
     .off-canvas-wrapper .off-canvas-inner-content {
-        width: 270px;
+        width: 220px;
     }
 }
 
 .off-canvas-wrapper .btn-close-off-canvas {
     top: 0;
-    left: 100%;
+    left: 78%;
     width: 60px;
     height: 60px;
-    font-size: 26px;
-    /* color: #0172d0; */
+    font-size: 21px;
+    color: #ffffff;
     line-height: 60px;
     text-align: center;
     cursor: pointer;
@@ -1036,7 +1036,7 @@ only screen and (max-width: 767.98px) {
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 .off-canvas-wrapper .btn-close-off-canvas i {
