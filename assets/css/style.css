@@ -3541,7 +3541,7 @@ only screen and (max-width: 767.98px) {
 }
 
 .widget-logo {
-    max-width: 110px;
+    max-width: 165px;
     margin-bottom: 30px;
 }
 
@@ -3601,7 +3601,14 @@ only screen and (max-width: 767.98px) {
 .socialIcons{
     padding: 2%;
 }
+/* SVGS styling */
+.service-policy-icon img{
+    width: 80px;
+}
+.service-icon img{
+    width: 80px;
 
+}
 .useful-link li a {
     color: #151515;
     position: relative;
