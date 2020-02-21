@@ -3697,11 +3697,15 @@ only screen and (max-width: 767.98px) {
         padding-left: 0;
     }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 479.98px), only screen and (max-width: 767.98px), only screen and (max-width: 1024px) {
     .service-item.mt-65 .service-icon img,.service-item.mt-65 .service-icon div, .service-item.mt-65 .service-icon h3, .service-item.mt-65 .service-icon p {
         margin-right: auto !important;
         text-align: center !important;
     }
 }
-
+@media only screen and (max-width: 767.98px), only screen and (max-width: 1024px) {
+    .col-xl-5.offset-xl-1.order-1.order-xl-2, .row.align-items-center, .contact-area  .container .row, .footer-widget-area.gray-bg.section-padding.pb-125, .policy-area.section-padding.pb-125.fix.wow.fadeInUp{
+        padding: 5%;
+    }
+}
 /*----- footer section end -----*/

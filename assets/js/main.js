@@ -19,7 +19,7 @@
     $('.off-canvas-wrapper').addClass('open')
   })
 
-  $('.btn-close-off-canvas,.off-canvas-overlay').on('click', function () {
+  $('.btn-close-off-canvas,.off-canvas-overlay,.mobile-menu>li>a').on('click', function () {
     $('body').removeClass('fix')
     $('.off-canvas-wrapper').removeClass('open')
   })
