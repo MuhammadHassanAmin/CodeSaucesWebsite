@@ -3603,10 +3603,10 @@ only screen and (max-width: 767.98px) {
 }
 /* SVGS styling */
 .service-policy-icon img{
-    width: 80px;
+    width: 60px;
 }
 .service-icon img{
-    width: 80px;
+    width: 60px;
 
 }
 .useful-link li a {
@@ -3695,6 +3695,12 @@ only screen and (max-width: 767.98px) {
 @media only screen and (min-width: 1600px) {
     .footer-widget-area [class*="col-"]:first-child .footer-single-widget {
         padding-left: 0;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .service-item.mt-65 .service-icon img,.service-item.mt-65 .service-icon div, .service-item.mt-65 .service-icon h3, .service-item.mt-65 .service-icon p {
+        margin-right: auto !important;
+        text-align: center !important;
     }
 }
 
