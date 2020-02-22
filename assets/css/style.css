@@ -849,7 +849,7 @@ only screen and (max-width: 767.98px) {
 
 .mobile-menu li>a {
     font-size: 16px;
-    color: #fff;
+    color: #000;
     text-transform: capitalize;
     line-height: 18px;
     position: relative;
@@ -932,7 +932,7 @@ only screen and (max-width: 767.98px) {
 }
 
 .off-canvas-contact-widget li {
-    color: #fff;
+    color: #000;
     font-size: 15px;
     margin-bottom: 5px;
 }
@@ -942,7 +942,7 @@ only screen and (max-width: 767.98px) {
 }
 
 .off-canvas-contact-widget li a {
-    color: #fff;
+    color: #000;
 }
 
 .off-canvas-contact-widget li a:hover {
@@ -954,7 +954,7 @@ only screen and (max-width: 767.98px) {
 }
 
 .off-canvas-social-widget a {
-    color: #fff;
+    color: #000;
     font-size: 18px;
     display: inline-block;
     margin-right: 15px;
@@ -1003,8 +1003,8 @@ only screen and (max-width: 767.98px) {
 
 .off-canvas-wrapper .off-canvas-inner-content {
     /* background-color: #0172d0; */
-    background-color: #000000;
-    opacity: 0.8;
+    background-color: #ffffff;
+    opacity: 0.9;
     width: 300px;
     height: 100%;
     position: relative;
@@ -1028,7 +1028,7 @@ only screen and (max-width: 767.98px) {
     width: 60px;
     height: 60px;
     font-size: 21px;
-    color: #ffffff;
+    color: #000000;
     line-height: 60px;
     text-align: center;
     cursor: pointer;
@@ -3705,7 +3705,7 @@ only screen and (max-width: 767.98px) {
 }
 @media only screen and (max-width: 767.98px), only screen and (max-width: 1024px) {
     .col-xl-5.offset-xl-1.order-1.order-xl-2, .row.align-items-center, .contact-area  .container .row, .footer-widget-area.gray-bg.section-padding.pb-125, .policy-area.section-padding.pb-125.fix.wow.fadeInUp{
-        padding: 5%;
+        padding: 3%;
     }
 }
 /*----- footer section end -----*/
