@@ -207,3 +207,25 @@
   new WOW().init()
 
 })(jQuery)
+
+$(window).on("load", function() {/* activate jquery isotope */
+  var $container = $("#posts").isotope({
+    itemSelector: ".item",
+    isFitWidth: true
+  });
+
+  $container.isotope({ filter: "*" });
+  // filter items on button click
+  $("#filters").on("click", "button", function() {
+    var filterValue = $(this).attr("data-filter");
+    $container.isotope({ filter: filterValue });
+  });
+  $(".tab-button").on("click", function() {
+    $(".tab-button.active").removeClass("active");
+    $(this).addClass("active");
+  });
+  var $grid = $("#posts").isotope({
+    itemSelector: ".item",
+    percentPosition: true
+  });
+});
