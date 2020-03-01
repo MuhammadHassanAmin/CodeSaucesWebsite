@@ -365,6 +365,9 @@ only screen and (max-width: 767.98px) {
 .mb-30 {
     margin-bottom: 30px;
 }
+.ml-260{
+    margin-left: 260px;
+}
 
 .mt-20 {
     margin-top: 20px;
@@ -2039,13 +2042,47 @@ only screen and (max-width: 767.98px) {
 
 .service-list-left .service-item:nth-child(1),
 .service-list-left .service-item:nth-child(3) {
-    margin-left: 52px;
+    margin-left: 260px;
 }
 
+.mobile-services-icon{
+    position: relative;
+    top: -18px;
+    right: 90px;
+}
+.project-management-services-icon{
+
+position: relative;
+top: 80px;
+right: 20px;
+}
+
+.automated-testing-services-icon{
+position: relative;
+top: 37px;
+right: 198px;
+}
 @media only screen and (min-width: 992px) and (max-width: 1199.98px),
 only screen and (min-width: 768px) and (max-width: 991.98px),
 only screen and (max-width: 767.98px) {
 
+    .mobile-services-icon{
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    .project-management-services-icon{
+    
+    position: relative;
+    top: 0;
+    right: 0;
+    }
+    
+    .automated-testing-services-icon{
+    position: relative;
+    top: 0;
+    right: 0;
+    }
     .service-list-left .service-item:nth-child(1),
     .service-list-left .service-item:nth-child(3) {
         margin-left: 0;
