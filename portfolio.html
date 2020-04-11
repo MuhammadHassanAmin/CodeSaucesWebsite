@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="----" />
+    <meta name="keywords" content="Premium HTML Template" />
+    <meta name="author" content="HTMLmate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/vendor/bootstrap.min.css"
+    />
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" /> -->
+
+    <style>
+      .item-wrap img {
+        width: 100%;
+      }
+      .item-wrap {
+        margin: 15px;
+      }
+      .portfolio-section {
+        padding-top: 145px;
+        padding-bottom: 100px;
+      }
+      .home-2.header-style-3 .portfolio-section {
+        padding-top: 20px;
+      }
+      .home-2.header-style-3 .item-wrap {
+        margin: 0;
+      }
+      .item-grid {
+        width: 33.33%;
+        float: left;
+      }
+      .item-grid-1 {
+        width: 50%;
+        float: left;
+      }
+      .item-grid-2 {
+        width: 25%;
+        float: left;
+      }
+      .button-group button {
+        background: transparent;
+        color: #959595;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        margin-right: 45px;
+        position: relative;
+      }
+      .button-group button:before,
+      button.tab-button.active:before {
+        color: rgba(0, 0, 0, 0);
+        content: ".";
+        font-size: 30px;
+        left: 0px;
+        pointer-events: none;
+        position: absolute;
+        text-shadow: rgba(0, 0, 0, 0) 0px 0px;
+        top: -42px;
+        transition: text-shadow 0.3s ease 0s, color 0.3s ease 0s;
+      }
+      .button-group button:hover::before,
+      button.tab-button.active:before {
+        color: #222222;
+        text-shadow: 7px 0 #222222, 14px 0 #222222, 21px 0 #222222;
+      }
+      .button-group button span {
+        position: absolute;
+        top: -7px;
+        right: -20px;
+      }
+      button.tab-button.active {
+        color: #090909;
+      }
+      .work-item {
+        position: relative;
+      }
+      .work-item:before {
+        position: absolute;
+        content: "";
+        background-color: rgba(255, 255, 255, 0.45);
+        width: 25%;
+        height: 25%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: all 0.5s ease;
+      }
+      .work-item:after {
+        position: absolute;
+        content: "";
+        background-color: rgba(255, 255, 255, 0.45);
+        width: 25%;
+        height: 25%;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        transition: all 0.5s ease;
+        transition-delay: 0.2s;
+      }
+      .work-item:hover::before,
+      .work-item:hover::after {
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+      }
+      .work-item:hover::before {
+        left: 0;
+        top: 0;
+      }
+      .work-item:hover::after {
+        right: 0;
+        bottom: 0;
+      }
+      .hover-text a span {
+        font-size: 24px;
+        background-color: #ffffff;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      .project-catagorry li a {
+        font-size: 12px;
+        color: #000;
+      }
+      .hover-text {
+        position: absolute;
+        top: 45%;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s all ease-in-out;
+      }
+      .work-item:hover .hover-text {
+        opacity: 1;
+        visibility: visible;
+        top: 50%;
+        transition-delay: 0.7s;
+      }
+      .project-description {
+        position: absolute;
+        bottom: 15px;
+        right: 0;
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s all ease-in-out;
+      }
+      .project-description h3 {
+        position: relative;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: #000;
+      }
+      .project-description h3 a::before {
+        border-bottom: 1px solid #232323;
+        bottom: 0;
+        content: "";
+        height: 1px;
+        left: 0;
+        position: absolute;
+        width: 50px;
+      }
+      .work-item:hover .project-description {
+        opacity: 1;
+        visibility: visible;
+        right: 15px;
+        transition-delay: 1.2s;
+      }
+      .more-btn,
+      .contact-adress-form button {
+        height: 50px;
+        width: 230px;
+        margin: 0 auto;
+        line-height: 55px;
+        background-color: #f9f9f9;
+        position: relative;
+      }
+      .more-btn a,
+      .contact-adress-form button {
+        letter-spacing: 3px;
+        color: #090909;
+        display: block;
+        width: 100%;
+      }
+      .more-btn:before,
+      .contact-adress-form button:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        background-color: #e7e7e7;
+        height: 5px;
+        width: 100%;
+        left: 0;
+      }
+      .more-btn:after,
+      .contact-adress-form button:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        background-color: #090909;
+        height: 5px;
+        width: 50%;
+        left: 0;
+        transition: 0.3s all ease-in-out;
+      }
+      .more-btn:hover::after,
+      .contact-adress-form button:hover::after {
+        width: 70%;
+      }
+      .pb45 {
+    padding-bottom: 45px;
+}
+    </style>
+  </head>
+  <body>
+    <section id="portfolio" class="portfolio-section">
+      <div class="container">
+        <div class="">
+          <div class="portfolio-content">
+            <div class="portfolio-tab pb55">
+              <div id="filters" class="button-group pb45">
+                <button class="tab-button active" data-filter="*">
+                  All<span>75</span>
+                </button>
+                <button class="tab-button" data-filter=".web">
+                  Branding<span>14</span>
+                </button>
+                <button class="tab-button" data-filter=".design">
+                  Identity<span>06</span>
+                </button>
+                <button class="tab-button" data-filter=".branding">
+                  Design<span>22</span>
+                </button>
+                <button class="tab-button" data-filter=".photography">
+                  Travel<span>03</span>
+                </button>
+              </div>
+              <!-- /tab-button -->
+
+              <div class="portfolio-tab-text-pic">
+                <div id="posts">
+                  <div id="1" class="item item-grid web">
+                    <div class="item-wrap">
+                      <div class="work-item">
+                        <div class="work-pic">
+                          <img
+                            src="assets/img/portfolio/port-1.jpg"
+                            alt="image"
+                          />
+                        </div>
+                        <!-- //img -->
+                        <div class="hover-content">
+                          <div class="hover-text text-center">
+                            <a
+                              href="assets/img/portfolio/port-1.jpg"
+                              data-lightbox="roadtrip"
+                              ><span class="ti-fullscreen"></span
+                            ></a>
+                          </div>
+                          <!-- //light-box-img -->
+                          <div class="project-description text-uppercase ul-li">
+                            <h3><a href="#">project Item Title</a></h3>
+                            <ul class="project-catagorry text-capitalize">
+                              <li><a href="#">Branding, </a></li>
+
+                              <li><a href="#">Development</a></li>
+                            </ul>
+                          </div>
+                          <!-- //project-description -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /item -->
+
+                  <div id="2" class="item item-grid design branding">
+                    <div class="item-wrap">
+                      <div class="work-item">
+                        <div class="work-pic">
+                          <img
+                            src="assets/img/portfolio/port-2.jpg"
+                            alt="image"
+                          />
+                        </div>
+                        <!-- //img -->
+                        <div class="hover-content">
+                          <div class="hover-text text-center">
+                            <a
+                              href="assets/img/portfolio/port-2.jpg"
+                              data-lightbox="roadtrip"
+                              ><span class="ti-fullscreen"></span
+                            ></a>
+                          </div>
+                          <!-- //light-box-img -->
+                          <div class="project-description text-uppercase ul-li">
+                            <h3><a href="#">project Item Title</a></h3>
+                            <ul class="project-catagorry text-capitalize">
+                              <li><a href="#">web, </a></li>
+
+                              <li><a href="#">Development</a></li>
+                            </ul>
+                          </div>
+                          <!-- //project-description -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /item -->
+
+                  <div id="3" class="item item-grid design web">
+                    <div class="item-wrap">
+                      <div class="work-item">
+                        <div class="work-pic">
+                          <img
+                            src="assets/img/portfolio/port-3.jpg"
+                            alt="image"
+                          />
+                        </div>
+                        <!-- //img -->
+                        <div class="hover-content">
+                          <div class="hover-text text-center">
+                            <a
+                              href="assets/img/portfolio/port-3.jpg"
+                              data-lightbox="roadtrip"
+                              ><span class="ti-fullscreen"></span
+                            ></a>
+                          </div>
+                          <!-- //light-box-img -->
+                          <div class="project-description text-uppercase ul-li">
+                            <h3><a href="#">project Item Title</a></h3>
+                            <ul class="project-catagorry text-capitalize">
+                              <li><a href="#">design, </a></li>
+
+                              <li><a href="#">Development</a></li>
+                            </ul>
+                          </div>
+                          <!-- //project-description -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /item -->
+
+                  <div id="4" class="item item-grid design photography web">
+                    <div class="item-wrap">
+                      <div class="work-item">
+                        <div class="work-pic">
+                          <img
+                            src="assets/img/portfolio/port-5.jpg"
+                            alt="image"
+                          />
+                        </div>
+                        <!-- //img -->
+                        <div class="hover-content">
+                          <div class="hover-text text-center">
+                            <a
+                              href="assets/img/portfolio/port-5.jpg"
+                              data-lightbox="roadtrip"
+                              ><span class="ti-link"></span
+                            ></a>
+                          </div>
+                          <!-- //light-box-img -->
+                          <div class="project-description text-uppercase ul-li">
+                            <h3><a href="#">project Item Title</a></h3>
+                            <ul class="project-catagorry text-capitalize">
+                              <li><a href="#">Branding, </a></li>
+
+                              <li><a href="#">Development</a></li>
+                            </ul>
+                          </div>
+                          <!-- //project-description -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /item -->
+
+                  <div id="5" class="item item-grid design web">
+                    <div class="item-wrap">
+                      <div class="work-item">
+                        <div class="work-pic">
+                          <img
+                            src="assets/img/portfolio/port-4.jpg"
+                            alt="image"
+                          />
+                        </div>
+                        <!-- //img -->
+                        <div class="hover-content">
+                          <div class="hover-text text-center">
+                            <a
+                              class="popup zoom-gallery"
+                              href="https://www.youtube.com/watch?v=_kqQDCxRCzM"
+                              ><span class="ti-control-forward"></span
+                            ></a>
+                          </div>
+                          <!-- //light-box-img -->
+                          <div class="project-description text-uppercase ul-li">
+                            <h3><a href="#">project Item Title</a></h3>
+                            <ul class="project-catagorry text-capitalize">
+                              <li><a href="#">travel, </a></li>
+
+                              <li><a href="#">place</a></li>
+                            </ul>
+                          </div>
+                          <!-- //project-description -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /item -->
+
+                  <div id="6" class="item item-grid design branding web">
+                    <div class="item-wrap">
+                      <div class="work-item">
+                        <div class="work-pic">
+                          <img
+                            src="assets/img/portfolio/port-6.jpg"
+                            alt="image"
+                          />
+                        </div>
+                        <!-- //img -->
+                        <div class="hover-content">
+                          <div class="hover-text text-center">
+                            <a
+                              href="assets/img/portfolio/port-6.jpg"
+                              data-lightbox="roadtrip"
+                              ><span class="ti-link"></span
+                            ></a>
+                          </div>
+                          <!-- //light-box-img -->
+                          <div class="project-description text-uppercase ul-li">
+                            <h3><a href="#">project Item Title</a></h3>
+                            <ul class="project-catagorry text-capitalize">
+                              <li><a href="#">identity, </a></li>
+
+                              <li><a href="#">institute</a></li>
+                            </ul>
+                          </div>
+                          <!-- //project-description -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /item -->
+
+                  <div id="7" class="item item-grid design branding web">
+                    <div class="item-wrap">
+                      <div class="work-item">
+                        <div class="work-pic">
+                          <img
+                            src="assets/img/portfolio/port-7.jpg"
+                            alt="image"
+                          />
+                        </div>
+                        <!-- //img -->
+                        <div class="hover-content">
+                          <div class="hover-text text-center">
+                            <a
+                              href="assets/img/portfolio/port-7.jpg"
+                              data-lightbox="roadtrip"
+                              ><span class="ti-fullscreen"></span
+                            ></a>
+                          </div>
+                          <!-- //light-box-img -->
+                          <div class="project-description text-uppercase ul-li">
+                            <h3><a href="#">project Item Title</a></h3>
+                            <ul class="project-catagorry text-capitalize">
+                              <li><a href="#">Branding, </a></li>
+
+                              <li><a href="#">Development</a></li>
+                            </ul>
+                          </div>
+                          <!-- //project-description -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /item -->
+
+                  <div id="8" class="item item-grid design branding web">
+                    <div class="item-wrap">
+                      <div class="work-item">
+                        <div class="work-pic">
+                          <img
+                            src="assets/img/portfolio/port-9.jpg"
+                            alt="image"
+                          />
+                        </div>
+                        <!-- //img -->
+                        <div class="hover-content">
+                          <div class="hover-text text-center">
+                            <a
+                              class="popup"
+                              href="https://www.youtube.com/watch?v=QJO3ROT-A4E&list=PLxdmSpdkY-5LG9ZYDrX3qQq_iqsjfJhx9"
+                              ><span class="ti-control-forward"></span
+                            ></a>
+                          </div>
+                          <!-- //light-box-img -->
+                          <div class="project-description text-uppercase ul-li">
+                            <h3><a href="#">project Item Title</a></h3>
+                            <ul class="project-catagorry text-capitalize">
+                              <li><a href="#">html, </a></li>
+
+                              <li><a href="#">Development</a></li>
+                            </ul>
+                          </div>
+                          <!-- //project-description -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /item -->
+
+                  <div id="9" class="item item-grid design branding web">
+                    <div class="item-wrap">
+                      <div class="work-item">
+                        <div class="work-pic">
+                          <img
+                            src="assets/img/portfolio/port-8.jpg"
+                            alt="image"
+                          />
+                        </div>
+                        <!-- //img -->
+                        <div class="hover-content">
+                          <div class="hover-text text-center">
+                            <a
+                              href="assets/img/portfolio/port-8.jpg"
+                              data-lightbox="roadtrip"
+                              ><span class="ti-fullscreen"></span
+                            ></a>
+                          </div>
+                          <!-- //light-box-img -->
+                          <div class="project-description text-uppercase ul-li">
+                            <h3><a href="#">project Item Title</a></h3>
+                            <ul class="project-catagorry text-capitalize">
+                              <li><a href="#">Branding, </a></li>
+
+                              <li><a href="#">Development</a></li>
+                            </ul>
+                          </div>
+                          <!-- //project-description -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /item -->
+                </div>
+                <!--//posts-->
+              </div>
+              <!--//portfolio-tab-text-pic-->
+            </div>
+            <!--//portfolio-tab-->
+
+            <div class="poppin-more text-uppercase text-center">
+              <div class="more-btn">
+                <a href="#">MORE WORKS</a>
+              </div>
+            </div>
+            <!-- //.more -->
+          </div>
+          <!--//portfolio-content -->
+        </div>
+        <!--  /.row -->
+      </div>
+      <!--  /.conatiner -->
+    </section>
+    <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/jquery.isotope.min.js"></script>
+    <!-- <script>
+         $(window).on("load", function() {
+          /* activate jquery isotope */
+          var $container = $("#posts").isotope({
+            itemSelector: ".item",
+            isFitWidth: true
+          });
+
+          $container.isotope({ filter: "*" });
+          // filter items on button click
+          $("#filters").on("click", "button", function() {
+            var filterValue = $(this).attr("data-filter");
+            $container.isotope({ filter: filterValue });
+          });
+          $(".tab-button").on("click", function() {
+              debugger
+            $(".tab-button.active").removeClass("active");
+            $(this).addClass("active");
+          });
+          var $grid = $("#posts").isotope({
+            itemSelector: ".item",
+            percentPosition: true
+          });
+        });
+    </script> -->
+  </body>
+</html>
