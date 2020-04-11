@@ -52,12 +52,17 @@ Author:         HTMLmate
 
 
 @media screen and (max-width: 767px) {
+	.hvc{
+		flex-direction: column;
+		align-items: center;
+	}
 	.page-head-content {
 		left: 50%;
 		transform: translateX(-50%);
 	}
 	.container {
-		padding: 0 30px;
+		/* padding: 0 30px; */
+		 padding: 0 0px;
 	}
 	.item-grid{
 		width: 50%

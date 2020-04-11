@@ -73,6 +73,7 @@ h1,
     font-size: 36px;
 }
 
+
 @media only screen and (max-width: 767.98px) {
 
     h1,
@@ -537,6 +538,8 @@ only screen and (max-width: 767.98px) {
 .brand-logo {
     /* max-width: 110px; */
     width: 245px;
+    position: relative;
+    top: 7px;
 }
 
 .main-menu-wrapper {
@@ -778,7 +781,7 @@ only screen and (max-width: 767.98px) {
 }
 
 .mobile-logo {
-    max-width: 100px;
+    max-width: 150px;
 }
 
 .mobile-main-header {
@@ -1182,7 +1185,6 @@ only screen and (max-width: 767.98px) {
 .send-message-btn{
     border-radius: 25px;
     text-align: center;
-    width: 30%;
     margin: 0 auto;
 }
 .btn {
@@ -1266,7 +1268,11 @@ only screen and (max-width: 767.98px) {
     .title {
         margin-top: -7px;
         line-height: 1.3;
+       
     }
+    .team-content.about-inner{
+        text-align: center;
+    } 
 }
 
 
@@ -1795,7 +1801,7 @@ only screen and (max-width: 767.98px) {
 
 @media only screen and (max-width: 479.98px) {
     .hero-slider-content {
-        padding: 0 0 50px;
+        padding: 0 0 0px;
     }
 }
 
@@ -1864,7 +1870,7 @@ only screen and (max-width: 767.98px) {
 
 @media only screen and (max-width: 575.98px) {
     .hero-transparent-bg {
-        height: 550px;
+        height: 520px;
         padding-top: 0;
     }
 }
@@ -2101,7 +2107,7 @@ only screen and (max-width: 767.98px) {
     }
 .services-container{
     position: relative;
-    right: 25px;
+    right: 0;
     }
     .services-heading-text{
         position: relative;
@@ -2263,6 +2269,7 @@ only screen and (max-width: 767.98px) {
 only screen and (max-width: 767.98px) {
     .testimonial-wrapper {
         padding-bottom: 100px;
+        text-align: center;
     }
 }
 
@@ -2281,6 +2288,7 @@ only screen and (max-width: 767.98px) {
 only screen and (max-width: 767.98px) {
     .testimonial-inner {
         margin-top: 68px;
+        text-align: center;
     }
 }
 
@@ -3786,7 +3794,8 @@ only screen and (max-width: 767.98px) {
     }
 }
 @media only screen and (max-width: 767.98px), only screen and (max-width: 1024px) {
-    .col-xl-5.offset-xl-1.order-1.order-xl-2, .row.align-items-center, .contact-area  .container .row, .footer-widget-area.gray-bg.section-padding.pb-125, .policy-area.section-padding.pb-125.fix.wow.fadeInUp{
+    .col-xl-5.offset-xl-1.order-1.order-xl-2, .row.align-items-center, .contact-area  .container .row, .footer-widget-area.gray-bg.section-padding.pb-125, .policy-area.section-padding.pb-125.fix.wow.fadeInUp
+    {
         padding: 3%;
     }
 }
