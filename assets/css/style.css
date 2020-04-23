@@ -2699,13 +2699,18 @@ only screen and (max-width: 767.98px) {
 }
 
 @media only screen and (max-width: 479.98px) {
-    .team-wrapper--style_1 [class*="col-"] {
+    /* .team-wrapper--style_1 [class*="col-"] {
         max-width: 100%;
         -webkit-box-flex: 100%;
         -webkit-flex: 100%;
         -ms-flex: 100%;
         flex: 100%;
-    }
+    } */
+    .team-member-inner img{
+        width: 50%;
+        height: 150px;
+    } 
+  
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
