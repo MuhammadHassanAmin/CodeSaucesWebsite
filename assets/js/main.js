@@ -1,4 +1,4 @@
-;
+
 (function ($) {
   'use strict'
 
@@ -24,6 +24,77 @@
     $('.off-canvas-wrapper').removeClass('open')
   })
 
+
+  // Our Partners logos 
+
+  $(document).ready(function () {
+    $(document).on("scroll", onScroll);
+
+    //smoothscroll
+    $('a[href^="#"]').on('click', function (e) {
+      e.preventDefault();
+      $(document).off("scroll");
+      $('.main-menu a').each(function () {
+        $(this).removeClass('active');
+      })
+      $(this).addClass('active');
+
+      var target = this.hash,
+        menu = target;
+      let $target = $(target);
+      $('html, body').stop().animate({
+        'scrollTop': $target.offset().top + 2
+      }, 10, 'swing', function () {
+        window.location.hash = target;
+        $(document).on("scroll", onScroll);
+      });
+    });
+    // //Change menu active on click
+    // $('.main-menu a').on('click', function () {
+    //   debugger
+    //   $('.main-menu ').find('li.active').removeClass('active');
+    //   $(this).parent('li').addClass('active');
+    // });
+
+    $('.customer-logos').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      arrows: false,
+      dots: false,
+      pauseOnHover: false,
+      responsive: [{
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4
+        }
+      }, {
+        breakpoint: 520,
+        settings: {
+          slidesToShow: 1
+        }
+      }]
+    });
+
+  });
+
+
+  function onScroll(event) {
+    var scrollPos = $(document).scrollTop();
+    $('.main-menu a').each(function () {
+      var currLink = $(this);
+      var refElement = $(currLink.attr("href"));
+      if (refElement.position().top <= scrollPos + 300) {
+        $('.main-menu ul li').removeClass("active");
+        currLink.parent('li').addClass("active");
+      }
+      else {
+        currLink.removeClass("active");
+      }
+    });
+  }
+
   // offcanvas mobile menu
   var $offCanvasNav = $('.mobile-menu')
 
@@ -42,9 +113,9 @@
     var $this = $(this)
     if (
       $this
-      .parent()
-      .attr('class')
-      .match(/\b(menu-item-has-children|has-children|has-sub-menu)\b/) &&
+        .parent()
+        .attr('class')
+        .match(/\b(menu-item-has-children|has-children|has-sub-menu)\b/) &&
       ($this.attr('href') === '#' || $this.hasClass('menu-expand'))
     ) {
       e.preventDefault()
@@ -97,6 +168,7 @@
     nextArrow: '<button type="button" class="slick-next"></button>'
   })
 
+
   // brand logo carousel active js
   $('.brand-logo-carousel').slick({
     speed: 1000,
@@ -105,23 +177,23 @@
     arrows: false,
     adaptiveHeight: true,
     responsive: [{
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1
-        }
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2
       }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1
+      }
+    }
     ]
   })
 
@@ -176,8 +248,8 @@
         function () {
           $(this.element).toggleClass('team-open')
         }, {
-          offset: '75%'
-        }
+        offset: '75%'
+      }
       )
     }
   }
@@ -193,9 +265,9 @@
   })
   $('.scroll-top').on('click', function (event) {
     $('html,body').animate({
-        scrollTop: 0
-      },
-      200
+      scrollTop: 0
+    },
+      100
     )
   })
 
@@ -208,7 +280,7 @@
 
 })(jQuery)
 
-$(window).on("load", function() {/* activate jquery isotope */
+$(window).on("load", function () {/* activate jquery isotope */
   var $container = $("#posts").isotope({
     itemSelector: ".item",
     isFitWidth: true
@@ -216,11 +288,11 @@ $(window).on("load", function() {/* activate jquery isotope */
 
   $container.isotope({ filter: "*" });
   // filter items on button click
-  $("#filters").on("click", "button", function() {
+  $("#filters").on("click", "button", function () {
     var filterValue = $(this).attr("data-filter");
     $container.isotope({ filter: filterValue });
   });
-  $(".tab-button").on("click", function() {
+  $(".tab-button").on("click", function () {
     $(".tab-button.active").removeClass("active");
     $(this).addClass("active");
   });
@@ -228,4 +300,8 @@ $(window).on("load", function() {/* activate jquery isotope */
     itemSelector: ".item",
     percentPosition: true
   });
+
+
+
+
 });

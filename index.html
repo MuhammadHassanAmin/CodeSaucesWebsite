@@ -31,10 +31,21 @@
 
   <link rel="stylesheet" type="text/css" href="assets/css/plugins//responsive.css">
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164524553-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-164524553-1');
+  </script>
+
 </head>
 
 <body>
   <header class="header-area">
+
     <div class="main-header d-none d-lg-block">
       <!-- <div class="header-top theme-bg">
           <div class="container">
@@ -65,6 +76,7 @@
         </div> -->
       <div class="main-menu-wrapper sticky header-transparent">
         <div class="container">
+
           <div class="row align-items-center">
             <div class="col-lg-3">
               <div class="brand-logo">
@@ -81,6 +93,9 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#aboutus">About us</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#clients">Clients</a></li>
+
                   </ul>
                 </nav>
               </div>
@@ -127,6 +142,8 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#aboutus">About us</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#partners">Partners</a></li>
               </ul>
             </nav>
           </div>
@@ -226,7 +243,7 @@
         <div class="row">
           <div class="col-12">
             <div class="section-title text-center services-container-heading">
-              <h2 class="h1 title">Services that we provide</h2>
+              <h2 class="h1 title"> Our <span class="primary-color">Services</span></h2>
               <p>
                 We believe that softwares designed by CodeSauces have a unique
                 and best look and feel with excelent performance and
@@ -323,8 +340,8 @@
     </section>
 
     <!-- team section start -->
-    <section class="team-wrapper team-wrapper--style_1 my-5  my-lg-0 pt-0 wow fadeInUp" data-wow-duration="1s"
-      data-wow-delay=".5s">
+    <section id="aboutus" class="team-wrapper team-wrapper--style_1 my-5  my-lg-0 pt-0 wow fadeInUp"
+      data-wow-duration="1s" data-wow-delay=".5s">
       <div class="container pv-100">
         <div class="row align-items-center">
           <div class="col-xl-6 order-2 order-xl-1">
@@ -375,10 +392,10 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-5 offset-xl-1 order-1 order-xl-2">
+          <div class="col-xl-5 offset-xl-1 order-1 order-xl-2 ">
             <div class="team-content about-inner ">
               <h2 class="h1 title">
-                We have <span>Creative</span> Team<br />
+                We have <span class="primary-color">Creative</span> Team<br />
                 <span>Discover</span> our experts
               </h2>
               <h3 class="subtitle">
@@ -397,8 +414,8 @@
       </div>
     </section>
     <!-- Counter section start -->
-    <section id="aboutus" class="funfacts-section gray-bg section-padding">
-      <div class="container">
+    <section class="funfacts-section gray-bg section-padding  ">
+      <div class="container wow  fadeInUp">
         <div class="row">
           <div class="col-12">
             <div class="section-title section-title--style_2 text-center">
@@ -410,7 +427,7 @@
           </div>
         </div>
       </div>
-      <div class="container mtn-40">
+      <div class="container mtn-40 wow  fadeInUp">
         <div class="row">
           <div class="col-md-3 col-6">
             <div class="counterup-item mt-40">
@@ -440,308 +457,47 @@
       </div>
       </div>
     </section>
-<!-- 
-    <section id="portfolio" class="portfolio-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title text-center mb-4">
-              <h2 class="h1 title">Our <span class="primary-color">Work</span></h2>
-            </div>
-            <div class="">
-              <div class="portfolio-content">
-                <div class="portfolio-tab pb55">
-                  <div id="filters" class="button-group pb20 pl15 d-flex justify-content-center">
-                    <button class="tab-button active" data-filter="*">
-                      All
-                    </button>
-                    <button class="tab-button" data-filter=".web">
-                      Web Apps
-                    </button>
-                    <button class="tab-button" data-filter=".design">
-                      Mobile Apps
-                    </button>
-                    <button class="tab-button" data-filter=".branding">
-                      Design
-                    </button>
-                    <button class="tab-button" data-filter=".photography">
-                      Travel
-                    </button>
-                  </div>
-                  <!-- /tab-button -->
 
-                  <div class="portfolio-tab-text-pic">
-                    <div id="posts">
-                      <div id="1" class="item item-grid web">
-                        <div class="item-wrap">
-                          <div class="work-item">
-                            <div class="work-pic">
-                              <img src="assets/img/portfolio/port-1.jpg" alt="image" />
-                            </div>
-                            <!-- //img -->
-                            <div class="hover-content">
-                              <div class="hover-text text-center">
-                                <a href="assets/img/portfolio/port-1.jpg" data-lightbox="roadtrip"><span
-                                    class="ti-fullscreen"></span></a>
-                              </div>
-                              <!-- //light-box-img -->
-                              <div class="project-description text-uppercase ul-li">
-                                <h3>project Item Title</h3>
-                                <ul class="project-catagorry text-capitalize">
-                                  <li><a href="#">Branding, </a></li>
-
-                                  <li><a href="#">Development</a></li>
-                                </ul>
-                              </div>
-                              <!-- //project-description -->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- /item -->
-
-                      <div id="2" class="item item-grid design branding">
-                        <div class="item-wrap">
-                          <div class="work-item">
-                            <div class="work-pic">
-                              <img src="assets/img/portfolio/port-2.jpg" alt="image" />
-                            </div>
-                            <!-- //img -->
-                            <div class="hover-content">
-                              <div class="hover-text text-center">
-                                <a href="assets/img/portfolio/port-2.jpg" data-lightbox="roadtrip"><span
-                                    class="ti-fullscreen"></span></a>
-                              </div>
-                              <!-- //light-box-img -->
-                              <div class="project-description text-uppercase ul-li">
-                                <h3>project Item Title</h3>
-                                <ul class="project-catagorry text-capitalize">
-                                  <li><a href="#">web, </a></li>
-
-                                  <li><a href="#">Development</a></li>
-                                </ul>
-                              </div>
-                              <!-- //project-description -->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- /item -->
-
-                      <div id="3" class="item item-grid design web">
-                        <div class="item-wrap">
-                          <div class="work-item">
-                            <div class="work-pic">
-                              <img src="assets/img/portfolio/port-3.jpg" alt="image" />
-                            </div>
-                            <!-- //img -->
-                            <div class="hover-content">
-                              <div class="hover-text text-center">
-                                <a href="assets/img/portfolio/port-3.jpg" data-lightbox="roadtrip"><span
-                                    class="ti-fullscreen"></span></a>
-                              </div>
-                              <!-- //light-box-img -->
-                              <div class="project-description text-uppercase ul-li">
-                                <h3>project Item Title</h3>
-                                <ul class="project-catagorry text-capitalize">
-                                  <li><a href="#">design, </a></li>
-
-                                  <li><a href="#">Development</a></li>
-                                </ul>
-                              </div>
-                              <!-- //project-description -->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- /item -->
-
-                      <div id="4" class="item item-grid design photography web">
-                        <div class="item-wrap">
-                          <div class="work-item">
-                            <div class="work-pic">
-                              <img src="assets/img/portfolio/port-5.jpg" alt="image" />
-                            </div>
-                            <!-- //img -->
-                            <div class="hover-content">
-                              <div class="hover-text text-center">
-                                <a href="assets/img/portfolio/port-5.jpg" data-lightbox="roadtrip"><span
-                                    class="ti-link"></span></a>
-                              </div>
-                              <!-- //light-box-img -->
-                              <div class="project-description text-uppercase ul-li">
-                                <h3>project Item Title</h3>
-                                <ul class="project-catagorry text-capitalize">
-                                  <li><a href="#">Branding, </a></li>
-
-                                  <li><a href="#">Development</a></li>
-                                </ul>
-                              </div>
-                              <!-- //project-description -->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- /item -->
-
-                      <div id="5" class="item item-grid design web">
-                        <div class="item-wrap">
-                          <div class="work-item">
-                            <div class="work-pic">
-                              <img src="assets/img/portfolio/port-4.jpg" alt="image" />
-                            </div>
-                            <!-- //img -->
-                            <div class="hover-content">
-                              <div class="hover-text text-center">
-                                <a class="popup zoom-gallery" href="https://www.youtube.com/watch?v=_kqQDCxRCzM"><span
-                                    class="ti-control-forward"></span></a>
-                              </div>
-                              <!-- //light-box-img -->
-                              <div class="project-description text-uppercase ul-li">
-                                <h3>project Item Title</h3>
-                                <ul class="project-catagorry text-capitalize">
-                                  <li><a href="#">travel, </a></li>
-
-                                  <li><a href="#">place</a></li>
-                                </ul>
-                              </div>
-                              <!-- //project-description -->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- /item -->
-
-                      <div id="6" class="item item-grid design branding web">
-                        <div class="item-wrap">
-                          <div class="work-item">
-                            <div class="work-pic">
-                              <img src="assets/img/portfolio/port-6.jpg" alt="image" />
-                            </div>
-                            <!-- //img -->
-                            <div class="hover-content">
-                              <div class="hover-text text-center">
-                                <a href="assets/img/portfolio/port-6.jpg" data-lightbox="roadtrip"><span
-                                    class="ti-link"></span></a>
-                              </div>
-                              <!-- //light-box-img -->
-                              <div class="project-description text-uppercase ul-li">
-                                <h3>project Item Title</h3>
-                                <ul class="project-catagorry text-capitalize">
-                                  <li><a href="#">identity, </a></li>
-
-                                  <li><a href="#">institute</a></li>
-                                </ul>
-                              </div>
-                              <!-- //project-description -->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- /item -->
-
-                      <div id="7" class="item item-grid design branding web">
-                        <div class="item-wrap">
-                          <div class="work-item">
-                            <div class="work-pic">
-                              <img src="assets/img/portfolio/port-7.jpg" alt="image" />
-                            </div>
-                            <!-- //img -->
-                            <div class="hover-content">
-                              <div class="hover-text text-center">
-                                <a href="assets/img/portfolio/port-7.jpg" data-lightbox="roadtrip"><span
-                                    class="ti-fullscreen"></span></a>
-                              </div>
-                              <!-- //light-box-img -->
-                              <div class="project-description text-uppercase ul-li">
-                                <h3><a href="#">project Item Title</a></h3>
-                                <ul class="project-catagorry text-capitalize">
-                                  <li><a href="#">Branding, </a></li>
-
-                                  <li><a href="#">Development</a></li>
-                                </ul>
-                              </div>
-                              <!-- //project-description -->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- /item -->
-
-                      <div id="8" class="item item-grid design branding web">
-                        <div class="item-wrap">
-                          <div class="work-item">
-                            <div class="work-pic">
-                              <img src="assets/img/portfolio/port-9.jpg" alt="image" />
-                            </div>
-                            <!-- //img -->
-                            <div class="hover-content">
-                              <div class="hover-text text-center">
-                                <a class="popup"
-                                  href="https://www.youtube.com/watch?v=QJO3ROT-A4E&list=PLxdmSpdkY-5LG9ZYDrX3qQq_iqsjfJhx9"><span
-                                    class="ti-control-forward"></span></a>
-                              </div>
-                              <!-- //light-box-img -->
-                              <div class="project-description text-uppercase ul-li">
-                                <h3><a href="#">project Item Title</a></h3>
-                                <ul class="project-catagorry text-capitalize">
-                                  <li><a href="#">html, </a></li>
-
-                                  <li><a href="#">Development</a></li>
-                                </ul>
-                              </div>
-                              <!-- //project-description -->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- /item -->
-
-                      <div id="9" class="item item-grid design branding web">
-                        <div class="item-wrap">
-                          <div class="work-item">
-                            <div class="work-pic">
-                              <img src="assets/img/portfolio/port-8.jpg" alt="image" />
-                            </div>
-                            <!-- //img -->
-                            <div class="hover-content">
-                              <div class="hover-text text-center">
-                                <a href="assets/img/portfolio/port-8.jpg" data-lightbox="roadtrip"><span
-                                    class="ti-fullscreen"></span></a>
-                              </div>
-                              <!-- //light-box-img -->
-                              <div class="project-description text-uppercase ul-li">
-                                <h3><a href="#">project Item Title</a></h3>
-                                <ul class="project-catagorry text-capitalize">
-                                  <li><a href="#">Branding, </a></li>
-
-                                  <li><a href="#">Development</a></li>
-                                </ul>
-                              </div>
-                              <!-- //project-description -->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- /item -->
-                    </div>
-                    <!--//posts-->
-                  </div>
-                  <!--//portfolio-tab-text-pic-->
-                </div>
-                <!--//portfolio-tab-->
-
-
+    <!-- Tell us your project -->
+    <section id="contact" class="team-wrapper team-wrapper--style_1 my-5  my-lg-0 pt-0 wow fadeInUp"
+      data-wow-duration="1s" data-wow-delay=".5s">
+      <div class="container pv-100  ">
+        <div class="contact-message col-sm-10 hc">
+          <h2 class="h1 title contact-title text-center">Tell Us Your <span class="primary-color">Project</span></h2>
+          <form id="contact-form" action="https://formspree.io/myydraza"  method="post" class="contact-form">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <input name="first_name" placeholder="Name *" type="text" required />
               </div>
-              <!--//portfolio-content -->
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <input name="phone" placeholder="Phone *" type="text" required />
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <input name="email_address" placeholder="Email *" type="text" required />
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <input name="contact_subject" placeholder="Subject *" type="text" />
+              </div>
+              <div class="col-12">
+                <div class="contact2-textarea text-center">
+                  <textarea placeholder="Message *" name="message" class="form-control2" required=""></textarea>
+                </div>
+                <div class="contact-btn">
+                  <button class="btn btn-all send-message-btn primary-bg-color hc" type="submit">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+              <div class="col-12 d-flex justify-content-center">
+                <p class="form-messege"></p>
+              </div>
             </div>
-          </div>
+          </form>
         </div>
-
       </div>
-      <!--  /.conatiner -->
-    </section> -->
-    <section class="testimonial-wrapper text-left gray-bg section-padding fix">
+    </section>
+
+    <section id="reviews" class="testimonial-wrapper text-left gray-bg section-padding fix">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-xl-5 col-lg-5 order-2 order-lg-1 wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
@@ -803,72 +559,43 @@
         </div>
       </div>
     </section>
-    <section id="contact" class="testimonial-wrapper  section-padding fix">
+    <section id="our-partners" class="testimonial-wrapper  section-padding fix">
       <!-- <div class="map-area">
             <div id="map"></div>
         </div> -->
       <!-- google map end -->
 
-      <!-- contact area start -->
-      <div class="contact-area ">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 order-2 ">
-              <div class="contact-message">
-                <h2 class="h1 title contact-title">Tell Us Your Project</h2>
-                <form id="contact-form" action="assets/php/mail.php" method="post" class="contact-form">
-                  <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                      <input name="first_name" placeholder="Name *" type="text" required />
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                      <input name="phone" placeholder="Phone *" type="text" required />
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                      <input name="email_address" placeholder="Email *" type="text" required />
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                      <input name="contact_subject" placeholder="Subject *" type="text" />
-                    </div>
-                    <div class="col-12">
-                      <div class="contact2-textarea text-center">
-                        <textarea placeholder="Message *" name="message" class="form-control2" required=""></textarea>
-                      </div>
-                      <div class="contact-btn">
-                        <button class="btn btn-all send-message-btn primary-bg-color hc" type="submit">
-                          Send Message
-                        </button>
-                      </div>
-                    </div>
-                    <div class="col-12 d-flex justify-content-center">
-                      <p class="form-messege"></p>
-                    </div>
-                  </div>
-                </form>
-              </div>
 
-            </div>
-            <div class="col-lg-6 order-1 ">
-              <div class="contact-information">
-                <h2 class="h1 title contact-title">Contact Us</h2>
-                <p>
-                  Ready to improve your online business presence today. Contact us.
-                </p>
-                <ul class="align-content-center d-flex flex-column hvc">
-                  <li>
-                    <i class="fa fa-fax"></i> Address : G-15, Islamabad, Pakistan
-                  </li>
-                  <li>
-                    <i class="fa fa-envelope-o"></i> E-mail:
-                    info@codesauces.com
-                  </li>
-                  <li><i class="fa fa-phone"></i> +923455112613</li>
-                </ul>
+
+      <section id="clients" class="team-wrapper team-wrapper--style_1 my-5  my-lg-0 pt-0 wow fadeInUp"
+        data-wow-duration="1s" data-wow-delay=".5s"
+        style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
+        <div class="container   ">
+          <div class="contact-message col-sm-10 hc">
+            <h2 class="h1 title contact-title text-center">Our <span class="primary-color">Client's</span></h2>
+            <section class="customer-logos slider mt-3 mt-md-0">
+              <div class="slide"><img src="/assets/img/clientslogos/graph9%20Logo.png">
               </div>
-            </div>
+             
+              <!-- <div class="slide"><img src="/assets/img/clientslogos/capriEasy.png"></div> -->
+           
+              <div class="slide"><img src="/assets/img/clientslogos/DYWLogo.png">
+              </div>
+              <div class="slide"><img src="/assets/img/clientslogos/eyeTelligence.png"></div>
+
+              <div class="slide"><img src="/assets/img/clientslogos/NiaziFoods.png"></div>
+              <div class="slide"><img src="/assets/img/clientslogos/medtronix_logo.png"></div>
+
+              <div class="slide"><img src="/assets/img/clientslogos/capriEasyLogo.png"></div>
+            </section>
           </div>
         </div>
+      </section>
     </section>
+
+
+
+
   </main>
   <div class="scroll-top not-visible">
     <i class="fa fa-angle-up"></i>
@@ -887,21 +614,16 @@
               </div>
               <div class="widget-body">
                 <p class="desc">
-                  Ready to improve your online business presence
-                  today.
+                  CodeSauce is an emerging contributors platform in computer
+                  software world. We have immensely talented and super
+                  enthusiastic team.
                 </p>
-                <ul class="contact-info d-flex flex-column hvc">
-                  <li>
-                    <span><i class="fa fa-map-marker"></i></span> G-15, Islamabad City, Pakistan
-                  </li>
-                  <li>
-                    <span><i class="fa fa-phone"></i></span> (051) 5580708
-                  </li>
-                  <li>
-                    <span><i class="fa fa-envelope"></i></span> info@codesauces.com
-
-                  </li>
-                </ul>
+                <a target="_blank" href="https://www.facebook.com/CodeSauces/"><i
+                    class="fa fa-facebook socialIcons fa-2x primary-color"></i></a>
+                <a target="_blank" href="https://twitter.com/CodeSauces"><i
+                    class="fa fa-twitter socialIcons fa-2x primary-color"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/company/codesauces/"><i
+                    class="fa fa-linkedin socialIcons fa-2x primary-color"></i></a>
               </div>
             </div>
           </div>
@@ -935,22 +657,26 @@
                 </div>
               </div>
             </div>
-            <a href="https://www.facebook.com/CodeSauces/"><i
-                class="fa fa-facebook socialIcons fa-2x primary-color"></i></a>
-            <a href="https://twitter.com/CodeSauces"><i class="fa fa-twitter socialIcons fa-2x primary-color"></i></a>
-            <a href="https://www.linkedin.com/company/codesauces/"><i
-                class="fa fa-linkedin socialIcons fa-2x primary-color"></i></a>
+
           </div>
           <div class="col-lg-3 col-md-6">
             <div class="footer-single-widget mt-40">
-              <h3 class="widget-title">Quick Links</h3>
+              <h3 class="widget-title">Contact Us</h3>
               <div class="widget-body">
-                <ul class="d-flex flex-column hvc useful-link">
-                  <li><a href="#home">Home</a></li>
-                  <li><a href="#services">Services</a></li>
-                  <li><a href="#aboutus">About us</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                </ul>
+                <div class="contact-information">
+
+
+                  <ul class="align-content-center d-flex flex-column hvc">
+                    <li>
+                      <i class="fa fa-fax"></i> Address : G-15, Islamabad, Pakistan
+                    </li>
+                    <li>
+                      <i class="fa fa-envelope-o"></i> E-mail:
+                      info@codesauces.com
+                    </li>
+                    <li><i class="fa fa-phone"></i> +923455112613</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -1000,6 +726,7 @@
   <script src="assets/js/plugins/google-map.js"></script>
   <!-- Main JS -->
   <script src="assets/js/main.js"></script>
+
 
 
   <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
