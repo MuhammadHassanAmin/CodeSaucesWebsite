@@ -360,7 +360,7 @@ textarea:focus {
 }
 /*--------- slick slider dot style start -------*/
 .slick-dot-style ul.slick-dots {
-    bottom: 15px;
+    bottom: -40px;
     left: 50%;
     position: absolute;
     -webkit-transform: translateX(-50%);
@@ -1592,7 +1592,7 @@ only screen and (max-width: 767.98px) {
 }
 
 /*------ counter up end ------*/
-/*----- slick arrow style start -----*/
+/* ----- slick arrow style start -----
 .testimonial-carousel-active.slick-arrow-style button.slick-arrow,
 .hero-slider-active.slick-arrow-style button.slick-arrow {
     width: 16px;
@@ -1684,9 +1684,9 @@ only screen and (max-width: 767.98px) {
 
 .slick-arrow-style_hero button.slick-arrow.slick-prev {
     left: 49%;
-}
+} */
 
-/*----- slick arrow style end -----*/
+/*----- slick arrow style end ----- */
 /* ----scroll to top css start ----*/
 .scroll-top {
     bottom: 50px;
