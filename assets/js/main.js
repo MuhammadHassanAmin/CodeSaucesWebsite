@@ -147,25 +147,15 @@
     dots: false,
     arrows: false,
     adaptiveHeight: true,
-    prevArrow: '<button type="button" class="slick-prev"></button>',
-    nextArrow: '<button type="button" class="slick-next"></button>',
-    responsive: [{
-      breakpoint: 1200,
-      settings: {
-        arrows: false,
-        dots: false
-      }
-    }]
   })
 
   // testimonial cariusel active js
   $('.testimonial-carousel-active').slick({
     speed: 1000,
     autoplay: false,
-    arrows: true,
+    dots: true,
+    arrows: false,
     adaptiveHeight: true,
-    prevArrow: '<button type="button" class="slick-prev"></button>',
-    nextArrow: '<button type="button" class="slick-next"></button>'
   })
 
 
