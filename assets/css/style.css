@@ -55,7 +55,30 @@ p {
 p:last-child {
     margin-bottom: 0;
 }
-
+.closeIcon {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+  }
+ 
+  .closeIcon:before, .closeIcon:after {
+    position: absolute;
+    left: 20px;
+    content: ' ';
+    height: 20px;
+    width: 1.5px;
+    background-color: #333;
+  }
+  .closeIcon:before {
+    transform: rotate(45deg);
+  }
+  .closeIcon:after {
+    transform: rotate(-45deg);
+  }
+  
+  
 h1,
 h2,
 h3,
@@ -1003,7 +1026,18 @@ only screen and (max-width: 767.98px) {
     margin-right: -30px;
 }
 
+.active a{
+    color: rgba(247, 56, 30, 0.92) !important;
+    font-weight: 700;
+}
+
+
 @media only screen and (max-width: 479.98px) {
+    
+.scroll-top:hover {
+    background-color:  #f8371f !important;
+}
+
     .mobile-menu {
         margin-top: 15px;
     }
@@ -1013,6 +1047,15 @@ only screen and (max-width: 767.98px) {
     }
     .widget-body .desc{
         width: 100% !important;
+    }
+    .scroll-top{
+        bottom: 20px !important;
+        height: 35px !important;
+        right: 10px !important;
+        width: 35px !important;
+    }
+    .scroll-top i {
+        line-height: 35px !important;
     }
 }
 
@@ -1741,6 +1784,7 @@ only screen and (max-width: 767.98px) {
 .scroll-top:hover {
     background-color: #151515;
 }
+
 
 /* ----scroll to top css end ----*/
 @-webkit-keyframes fadeInUp {
