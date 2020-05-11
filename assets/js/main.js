@@ -29,12 +29,16 @@
 
   $(document).ready(function () {
     $(document).on("scroll", onScroll);
-
+    $('.main-menu a,.mobile-menu a').on('click', function () {
+      var $that = $(this)
+      $that.parent('.main-menu,.mobile-menu').find(".active").removeClass("active")
+      $that.parent().addClass("active")
+    })
     //smoothscroll
     $('a[href^="#"]').on('click', function (e) {
       e.preventDefault();
       $(document).off("scroll");
-      $('.main-menu a').each(function () {
+      $('.main-menu a,.mobile-menu a').each(function () {
         $(this).removeClass('active');
       })
       $(this).addClass('active');
@@ -87,12 +91,28 @@
       var refElement = $(currLink.attr("href"));
       if (refElement.position().top <= scrollPos + 300) {
         $('.main-menu ul li').removeClass("active");
+        debugger
         currLink.parent('li').addClass("active");
       }
       else {
-        currLink.removeClass("active");
+        currLink.parent().removeClass("active");
       }
     });
+    if($(window).width() <= 767){
+      $('.mobile-menu a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos + 300) {
+          $('.mobile-menu li').removeClass("active");
+          debugger
+          currLink.parent('li').addClass("active");
+        }
+        else {
+          currLink.parent().removeClass("active");
+        }
+      });
+    } 
+
   }
 
   // offcanvas mobile menu
