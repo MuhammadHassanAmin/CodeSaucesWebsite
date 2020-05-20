@@ -37,7 +37,6 @@ a:focus {
     text-decoration: none;
 }
 .country-flag-container{
-    margin-top: 5px;
     height: 20px;
     display: flex;
     align-items: center;
@@ -50,6 +49,9 @@ a:focus {
 }
 p {
     margin-bottom: 8px;
+}
+.fntSize-point9rem{
+    font-size: .9rem;
 }
 
 p:last-child {
@@ -2500,7 +2502,6 @@ only screen and (max-width: 767.98px) {
     color: rgba(247, 56, 30, 0.92);
     line-height: 1;
     font-weight: 500;
-    padding-bottom: 4px;
 }
 
 .testimonial-content .client-desig {
